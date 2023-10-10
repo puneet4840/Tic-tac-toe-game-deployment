@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: game-service
+  name: tic-tac-toe-game-deployment
 spec:
   selector:
     app: game
