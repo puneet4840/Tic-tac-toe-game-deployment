@@ -19,17 +19,3 @@ spec:
         image: puneet1/tic_tac_toe 
         ports:
         - containerPort: 5000
-
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: game-service
-spec:
-  selector:
-    app: game
-  ports:
-    - port: 5000
-      targetPort: 5000
-  type: LoadBalancer
